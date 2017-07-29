@@ -18,14 +18,12 @@ LED_CHANNEL = 0  # set to '1' for GPIOs 13, 19, 41, 45 or 53
 LED_STRIP = ws.WS2811_STRIP_GRB  # Strip type and colour ordering
 
 
-
-
-
-def red():
+def red(strip):
     for i in range(strip.numPixels):
         strip.setPixelColor(i, Color(255,0,0))
 
-def blue():
+
+def blue(strip):
     for i in range(strip.numPixels):
         strip.setPixelColor(i, Color(255,255,0))
 
@@ -37,15 +35,15 @@ if __name__ == '__main__':
     # Intialize the library (must be called once before other functions).
     strip.begin()
 
-    blue()
+    blue(strip)
     time.sleep(1)
-    red()
+    red(strip)
     time.sleep(1)
-    blue()
+    blue(strip)
     time.sleep(1)
-    red()
+    red(strip)
     time.sleep(1)
-    blue()
+    blue(strip)
     time.sleep(1)
-    red()
+    red(strip)
     time.sleep(1)
