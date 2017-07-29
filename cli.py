@@ -26,7 +26,7 @@ def red(strip):
 
 def blue(strip):
     for i in range(strip.numPixels()):
-        strip.setPixelColor(i, Color(255,255,0))
+        strip.setPixelColor(i, Color(0,255,0))
     strip.show()
 
 
