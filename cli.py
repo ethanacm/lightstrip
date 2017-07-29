@@ -19,12 +19,12 @@ LED_STRIP = ws.WS2811_STRIP_GRB  # Strip type and colour ordering
 
 
 def red(strip):
-    for i in range(strip.numPixels):
+    for i in range(strip.numPixels()):
         strip.setPixelColor(i, Color(255,0,0))
 
 
 def blue(strip):
-    for i in range(strip.numPixels):
+    for i in range(strip.numPixels()):
         strip.setPixelColor(i, Color(255,255,0))
 
 
